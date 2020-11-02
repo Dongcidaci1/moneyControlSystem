@@ -1,5 +1,4 @@
 /* 
-
 程序入口文件
 */
 const express = require("express");
@@ -34,7 +33,6 @@ const port = process.env.port || 5000;
 
 //passport初始化
 app.use(passport.initialize());
-//这一步不是很懂
 require("./config/passport")(passport);
 
 // app.get("/", (req, res) => {
